@@ -15,7 +15,31 @@ int main()
         cout<<"Press 5 to delete data"<<endl;
         cout<<"Press 6 to exit "<<endl;
         cin>>value;
+        // adding switch condition loop for handle all the 6 condition
+        switch (value)
+        {
+            case 1:
+                Enter();
+                break;
+            case 2:
+                Show();
+                break;
+            case 3:
+                Search();
+                break;
+            case 4:
+                Update();
+                break;
+            case 5:
+                DeleteRecords();
+                break;
+            case 6:
+                exit();
+                break;
+            default:
+                cout<<"Invalid input"<<endl;
 
+        }
     }
     
     return 0;
