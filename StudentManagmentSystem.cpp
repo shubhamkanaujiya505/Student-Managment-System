@@ -8,6 +8,9 @@ void Enter(){
     int choice;
     cout<<"How many students do you want to enter: ";
     cin >> choice;
+    if(total ==0){
+
+    
     total = total + choice;
     for (int i = 0; i < choice; i++)
     {
@@ -23,7 +26,24 @@ void Enter(){
         cout<<"Enter Contact: ";
         cin>>arr5[i];
     }
-    
+    }
+    else{
+        for (int i = total; i < total + choice; i++)
+    {
+        cout<<"\n Enter data of student: "<<i+1<<endl<<endl;
+        cout<<"Enter name: ";
+        cin>>arr1[i];
+        cout<<"Enter Rollno: ";
+        cin>>arr2[i];
+        cout<<"Enter Course: ";
+        cin>>arr3[i];
+        cout<<"Enter Class: ";
+        cin>>arr4[i];
+        cout<<"Enter Contact: ";
+        cin>>arr5[i];
+    }
+         total = total + choice;
+    }
 }
 void Show(){
     int i;
