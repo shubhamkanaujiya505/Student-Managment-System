@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // store the student data in array formate
-string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20]
+string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20];
 int total = 0;
 // declearning functions
 void Enter(){
@@ -11,7 +11,7 @@ void Enter(){
     total = total + choice;
     for (int i = 0; i < choice; i++)
     {
-        cout<<"\n Enter data of student: "<<i+1<<endl;<<endl;
+        cout<<"\n Enter data of student: "<<i+1<<endl<<endl;
         cout<<"Enter name: ";
         cin>>arr1[i];
         cout<<"Enter Rollno: ";
@@ -26,14 +26,15 @@ void Enter(){
     
 }
 void Show(){
+    int i;
     for (int i = 0; i < total; i++)
     {
         cout<<"Data of student: "<<i+1<<endl;
-        cout<<"Name: "arr1[i];
-        cout<<"Rollno: "arr2[i];
-        cout<<"Course: "arr3[i];
-        cout<<"Class: "arr4[i];
-        cout<<"Contact: "arr5[i];
+        cout<<"Name: "<<arr1[i]<<endl;
+        cout<<"Rollno: "<<arr2[i]<<endl;
+        cout<<"Course: "<<arr3[i]<<endl;
+        cout<<"Class: "<<arr4[i]<<endl;
+        cout<<"Contact: "<<arr5[i]<<endl;
     }
     
 }
@@ -55,19 +56,19 @@ int main()
         switch (value)
         {
             case 1:
-                Enter();
+                enter();
                 break;
             case 2:
-                Show();
+                show();
                 break;
             case 3:
-                Search();
+                search();
                 break;
             case 4:
-                Update();
+                update();
                 break;
             case 5:
-                DeleteRecords();
+                deleteRecords();
                 break;
             case 6:
                 exit();
