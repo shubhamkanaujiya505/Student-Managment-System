@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
-
+// store the student data in array formate
+string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20]
+int total = 0;
+// declearning functions
 
 int main()
 {
