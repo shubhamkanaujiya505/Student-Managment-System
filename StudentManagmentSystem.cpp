@@ -4,6 +4,27 @@ using namespace std;
 string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20]
 int total = 0;
 // declearning functions
+void Enter(){
+    int choice;
+    cout<<"How many students do you want to enter: ";
+    cin >> choice;
+    total = total + choice;
+    for (int i = 0; i < choice; i++)
+    {
+        cout<<"\n Enter data of student: "<<i+1<<endl;<<endl;
+        cout<<"Enter name: ";
+        cin>>arr1[i];
+        cout<<"Enter Rollno: ";
+        cin>>arr2[i];
+        cout<<"Enter Course: ";
+        cin>>arr3[i];
+        cout<<"Enter Class: ";
+        cin>>arr4[i];
+        cout<<"Enter Contact: ";
+        cin>>arr5[i];
+    }
+    
+}
 
 int main()
 {
