@@ -25,6 +25,18 @@ void Enter(){
     }
     
 }
+void Show(){
+    for (int i = 0; i < total; i++)
+    {
+        cout<<"Data of student: "<<i+1<<endl;
+        cout<<"Name: "arr1[i];
+        cout<<"Rollno: "arr2[i];
+        cout<<"Course: "arr3[i];
+        cout<<"Class: "arr4[i];
+        cout<<"Contact: "arr5[i];
+    }
+    
+}
 
 int main()
 {
