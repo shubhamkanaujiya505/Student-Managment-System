@@ -59,6 +59,25 @@ void Show(){
     
 }
 
+void search(){
+    string rollno;
+    cout<<"enter the rollno of student which you want to search: ";
+    cin>>rollno;
+    for (int i = 0; i < total; i++)
+    {
+        if (rollno == arr2[i])      
+        {
+            cout<<"Data of student: "<<i+1<<endl;
+            cout<<"Name: "<<arr1[i]<<endl;
+            cout<<"Rollno: "<<arr2[i]<<endl;
+            cout<<"Course: "<<arr3[i]<<endl;
+            cout<<"Class: "<<arr4[i]<<endl;
+            cout<<"Contact: "<<arr5[i]<<endl;
+        }
+        
+    }
+    
+}
 int main()
 {
     // user input
