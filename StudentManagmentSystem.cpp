@@ -108,6 +108,40 @@ void update(){
         
     }
 }
+void deleteRecords(){
+    int a;
+    cout<<"Press 1 to delete full records"<<endl;
+    cout<<"Press 2 to delete specific records"<<endl;
+    cin>>a;
+    if(a==1){
+        total = 0;
+        cout<<"All record is deleted"<<endl;
+    }
+    else(a==2){
+        string rollno;
+        cout<<"enter rollno which you want to delete"<<endl;
+        cin>>rollno;
+        for (int i = 0; i < total; i++)
+        {
+            if(rollno == arr2[i])
+            {
+                for (int j = i; j < total; j++)
+                {
+                    arr1[j] = arr1[j+1];
+                    arr2[j] = arr2[j+1];
+                    arr3[j] = arr3[j+1];
+                    arr4[j] = arr4[j+1];
+                    arr5[j] = arr5[j+1];
+                }
+                
+            }
+        }
+        
+
+    }
+
+
+}
 int main()
 {
     // user input
