@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 // store the student data in array formate
 string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20];
@@ -133,6 +133,8 @@ void deleteRecords(){
                     arr4[j] = arr4[j+1];
                     arr5[j] = arr5[j+1];
                 }
+                total--;
+                cout<<"Your required record is deleted.."<<endl;
                 
             }
         }
