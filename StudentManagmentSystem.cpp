@@ -142,7 +142,8 @@ void deleteRecords(){
         total = 0;
         cout<<"All record is deleted"<<endl;
     }
-    else(a==2){
+    else
+    {
         string rollno;
         cout<<"enter rollno which you want to delete"<<endl;
         cin>>rollno;
@@ -167,6 +168,7 @@ void deleteRecords(){
 
     }
     }
+    
 
 }
 int main()
@@ -186,10 +188,10 @@ int main()
         switch (value)
         {
             case 1:
-                enter();
+                Enter();
                 break;
             case 2:
-                show();
+                Show();
                 break;
             case 3:
                 search();
@@ -201,7 +203,7 @@ int main()
                 deleteRecords();
                 break;
             case 6:
-                exit();
+                exit(0);
                 break;
             default:
                 cout<<"Invalid input"<<endl;
