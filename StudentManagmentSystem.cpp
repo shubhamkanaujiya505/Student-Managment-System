@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 // store the student data in array formate
 string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20];
@@ -77,6 +77,36 @@ void search(){
         
     }
     
+}
+void update(){
+    string rollno;
+    cout<<"enter the rollno of student which you want to search: ";
+    cin>>rollno;
+    for (int i = 0; i < total; i++)
+    {
+        if (rollno == arr2[i])      
+        {
+            cout<<"Previous data"<<endl;<<endl;
+            cout<<"Data of student: "<<i+1<<endl;
+            cout<<"Name: "<<arr1[i]<<endl;
+            cout<<"Rollno: "<<arr2[i]<<endl;
+            cout<<"Course: "<<arr3[i]<<endl;
+            cout<<"Class: "<<arr4[i]<<endl;
+            cout<<"Contact: "<<arr5[i]<<endl;
+            cout<<"\n enter new data: "<<endl;
+            cout<<?"\nEnter name: ";
+            cin>>arr1[i];
+            cout<<?"\nEnter Rollno: ";
+            cin>>arr2[i];
+            cout<<?"\nEnter Course: ";
+            cin>>arr3[i];
+            cout<<?"\nEnter Class: ";
+            cin>>arr4[i];
+            cout<<?"\nEnter Contact: ";
+            cin>>arr5[i];
+        }
+        
+    }
 }
 int main()
 {
